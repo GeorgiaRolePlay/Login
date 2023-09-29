@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="wholecef">
+        <button class="button">
+            <span class="X"></span>
+            <span class="Y"></span>
+            <div class="close">Close</div>
+          </button>
+        <div class="testcef">
+            <h2>მოგესალმებით სერვერ ფორტუნე ერპეზე აქ თქვენ იხილავთ ულამაზეს განახლებებს როგორიცაა ცეფ ბიბლიოთეკა ულამაზესი და გამართული გეიმმოუდი. სერვერზე არის 20 მდე სამუშაო. სერვერზე როლური თამაში ვითარდება სოფელში არის სოფლის მერია, პრეზიდენტი და ასე შემდეგ. ეს პროსტა სატეტსტო ტექსტია სერვერის დაქონექთებისას ავტომატურად ამოვარდება ეს ტექსტი. გასათიშად შეგიძლიათ დააწვეთ ესქს ან ზევით მარჯვენა კუთხეში მოცემულ x ღილაკს. ცეფ ის ღირებულება 10 ლარი. მოგესალმებით სერვერ ფორტუნე ერპეზე აქ თქვენ იხილავთ ულამაზეს განახლებებს როგორიცაა ცეფ ბიბლიოთეკა ულამაზესი და გამართული გეიმმოუდი. სერვერზე არის 20 მდე სამუშაო. სერვერზე როლური თამაში ვითარდება სოფელში არის სოფლის მერია, პრეზიდენტი და ასე შემდეგ. ეს პროსტა სატეტსტო ტექსტია სერვერის დაქონექთებისას ავტომატურად ამოვარდება ეს ტექსტი. გასათიშად შეგიძლიათ დააწვეთ ესქს ან ზევით მარჯვენა კუთხეში მოცემულ x ღილაკს. ცეფ ის ღირებულება 10 ლარი.</h2>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
+
+-------------------------------------------------------------------------
+
+CSS:
+.testcef{
+    display: flex;
+    
+    background-image: linear-gradient(to bottom, rgb(236, 96, 213), rgb(255, 0, 157), orange );
+    width: 950px;
+    height: 450px;
+    border-radius: 20px;
+    color: white;
+}
+
+.wholecef{
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    opacity: 0.76;
+}
+
+.testcef h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 5px;
+    font-size: 19px;
+}
+
+.button:hover{
+    margin-bottom: 15px;
+}
+
+.button {
+    position: relative;
+    bottom: 230px;
+    left: 970px;
+    z-index: 1;
+    width: 6em;
+    height: 2em;
+    border: none;
+    background: red;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+  
+  .X {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 2em;
+    height: 1.5px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  
+  .Y {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 2em;
+    height: 1.5px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+  }
+  
+  .close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -40%;
+    left: 70%;
+    width: 3em;
+    height: 1.7em;
+    font-size: 16px;
+    background-color: rgb(254, 255, 225);
+    color: #000;
+    border: 1px solid #000;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .button:hover {
+    background-color: rgb(210, 0, 0);
+  }
+  
+  .button:active {
+    background-color: rgb(130, 0, 0);
+  }
+  
+  .button:hover > .close {
+    animation: close 0.2s forwards 1.25s;
+  }
+  
+  @keyframes close {
+    100% {
+      opacity: 1;
+    }
+  }
+
+---------------------------
+
+JavaScript:
+
+let close = document.querySelector('button');
+let cef = document.querySelector('.wholecef');
+
+close.addEventListener('click', () => {
+    cef.style.display = "none";
+}) 
+.
+
+კარგი ჩვენი ვებსაიტი მზადაა ახლა რაც გვესაჭიროება ისაა რომ დავჰოსტოთ!
+
+რათქმაუნდა უკეთესი იქნება თუ გამოვიყენებთ ფასიან ჰოსტს თუ სერვერს ვაკეთებთ მაგრამ სატესტოდ უფასოც ნორმალურია კარგით ამ შემთხვევაში მე გამოვიყენებ 000webhost
+ნუ გადავალთ ამ ვებსაიტზე დავრეგისტრირდებით და შევქმნით 1 ვებსაიტს! შევალთ ამ 1 ვებსაიტის მენეჯმენტში და გადავალთ File Manager რომელიც ქვევით არის  მოცემული. 
+
+გადასვლის შემდგომ უნდა შევიდეთ ფოლდერ public_html(საჭიროა)
+და წავშალოთ ყველაფერი რამე თუ დაგხვდა. წაშლის შემდგომ შეგვიძლია ჩავაგდოთ ჩვენი ვებსაიტი და ავტვირთოთ. ატვირტის შემდგომ დავაკოპიროთ ჩვენი ვებსაიტის ლინკი  და უკვე მზად ვართ რომ შევიდეთ ჩვენს გეიმმოუდზე კოდის დასაწერად.
+ნუ ეს თქვენზეა დამოკიდებული როგორ გინდათ კომანდზე გამოჩნდეს როცა დასპაუნდება თუ როდის მაგრამ ამ შემთხვევაში მე კომანდს გამოვიყენებ
+კარგით შევდივართ გეიმმოუდზე და ვეძებთ რაიმე კომანდს
+შემდეგ კი ამ კომანდთან იქვე შევმქნით ახალ კომანდს
+მაგალითად:
+CMD:aboutserver(player_id, params[]){
+	cef_create_browser(player_id, 0x123, “Tqveni Website Link”, false, true);	
+Return 1;
+}

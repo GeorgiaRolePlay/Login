@@ -1,0 +1,21 @@
+<?php 
+$ip_address = $_SERVER['REMOTE_ADDR'];
+$ip_blocked = array('127.0.0.1','100.100.100.100');
+
+foreach($ip_blocked as $ip){
+    if($ip==$ip_address){
+        die();
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php echo $ip_address ?>
+</body>
+</html>
